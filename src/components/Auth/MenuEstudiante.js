@@ -1,6 +1,7 @@
-import Navbar from './NavbarMenuEstudiante';
+import Navbar from '../../NavbarMenuEstudiante';
+import './indexMenuEstudiante.css'
 
-function App() {
+function MenuEstudiante() {
   const indiceTrimestral = 3.7;
   const indiceGeneral = 3.2;
   const asigaturasCursadas = '30/96';
@@ -72,4 +73,4 @@ function App() {
   );
 }
 
-export default App;
+export default MenuEstudiante;
