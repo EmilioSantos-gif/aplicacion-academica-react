@@ -1,4 +1,5 @@
 import Login from './components/Auth/Login'
+import Estudiante from './components/Auth/MenuEstudiante'
 import { useState, useEffect } from 'react'
 import { useSession, useSupabaseClient } from '@supabase/auth-helpers-react';
 import { supabase } from './supabaseClient'
@@ -22,9 +23,7 @@ function App() {
   return (
     <div>
       {session ? (
-        <div>
-          <p>Menu X</p>
-        </div>
+        <Estudiante />
       ) : (
         <Login />
       )}
